@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Chuot.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/menuChuot.css">
+	<link rel='stylesheet' type='text/css' href='css/win.css' />
+	<link rel="shortcut icon" type="image/png" href="image/Iconpc.png"/>
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+	
+    <title>Mô Phỏng Chuột</title>
+</head>
+<body>
+	
+	<!-- Nội dụng trang -->	
+	<div id="showdbl" dblclick="">
+		
+		<!-- Menu -->	
+		<div class = "MenuClick" >
+			<div class = "BoxMenu">
+				<a href="BanPhim.html" class="textlink">BÀN PHÍM</a>			
+				<a href="Chuot.html" class="textlink">CHUỘT</a>			
+				<a href="GioiThieu.html" class="textlink">GIỚI THIỆU</a>	
+			</div>
+		</div>
+		
+		<!-- Màn hình decktop và mô phỏng -->	
+		<div class="Khung">	
+		
+			<!-- Màn hình decktop -->	
+			<div class="ManHinh" id="winmenu">			
+				<div class="wrapper">
+					  <div class="content">
+						  <li class="item share">
+							<div class="settings">
+							  <i class="uil uil-share"></i>
+							  <span>View</span>
+							</div>
+							<i class="uil uil-angle-right"></i>
+							<ul class="share-menu">
+							  <li class="items">
+								<i class="uil uil-twitter-alt"></i>
+								<span>View: Cài đặt hiển thị các Shortcut trên màn hình máy tính</span>
+							  </li>
+							</ul>
+						  </li>
+						  
+						  <li class="item share">
+							<div class="settings">
+							  <i class="uil uil-share"></i>
+							  <span>Sort by</span>
+							</div>
+							<i class="uil uil-angle-right"></i>
+							<ul class="share-menu">
+							  <li class="items">
+								<i class="uil uil-twitter-alt"></i>
+								<span>Sort by: Sắp xếp các Shortcut trên màn hình máy tính</span>
+							  </li>
+							</ul>
+						  </li>
+						  
+						  <li class="item share">
+							<div class="settings">
+							  <i class="uil uil-share"></i>
+							  <span>Refresh</span>
+							</div>
+							<i class="uil uil-angle-right"></i>
+							<ul class="share-menu">
+							  <li class="items">
+								<i class="uil uil-twitter-alt"></i>
+								<span>Refresh: Làm mới màn hình máy tính</span>
+							  </li>
+							</ul>
+						  </li>
+						<hr>
+						<li class="item share">
+							<div class="settings">
+							  <i class="uil uil-share"></i>
+							  <span>New</span>
+							</div>
+							<i class="uil uil-angle-right"></i>
+							<ul class="share-menu">
+							  <li class="items">
+								<i class="uil uil-twitter-alt"></i>
+								<span>New: Tạo mới Một thư mục, một shortcut hoặc một file cụ thể</span>
+							  </li>
+							</ul>
+						  </li>
+						  <hr>
+						  <li class="item share">
+							<div class="settings">
+							  <i class="uil uil-share"></i>
+							  <span>Display settings</span>
+							</div>
+							<i class="uil uil-angle-right"></i>
+							<ul class="share-menu">
+							  <li class="items">
+								<i class="uil uil-twitter-alt"></i>
+								<span>Display settings: Cài đặt hiển thị của Windown</span>
+							  </li>
+							</ul>
+						  </li>
+						  
+						   <li class="item share">
+							<div class="settings">
+							  <i class="uil uil-share"></i>
+							  <span>Personalize</span>
+							</div>
+							<i class="uil uil-angle-right"></i>
+							<ul class="share-menu">
+							  <li class="items">
+								<i class="uil uil-twitter-alt"></i>
+								<span>Personalize: Cài đặt giao diện Windown</span>
+							  </li>
+							</ul>
+						  </li>
+					  </div>
+					</div>	
+				<aside>			
+					<div id="app1" class='apps'><img src='image/thispc.png'>
+					  <p>This PC</p>
+									<div class="ap1wrapper">
+									  <div class="content">
+										  <li class="item ap1share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Open</span>
+											</div class="settings">
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap1share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Open: Mở ứng dụng thông qua shortcut</span>
+											  </li>
+											</ul>
+										  </li>
+										  <hr>
+										  <li class="item ap1share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Open file location</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap1share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Open file location: Mở vị trí được cài đặt của ứng dụng</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										  <li class="item ap1share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Run as administrator</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap1share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Run as administrator: Mở ứng dụng dưới quyền quản trị trên Windows </span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										  <li class="item ap1share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Pin to Start</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap1share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Pin to Start: Ghim shortcut của ứng dụng vào menu Start</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										   <li class="item ap1share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Pin to taskbar</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap1share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Pin to taskbar: Ghim shortcut của ứng dụng vào thanh Taskbar</span>
+											  </li>
+											</ul>
+										  </li>
+										<hr>
+										<li class="item ap1share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Send to</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap1share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Send to: sao chép shortcut, file, thư mục đến các thư mục thông dụng một cách nhanh chóng</span>
+											  </li>
+											</ul>
+										  </li>
+										  <hr>
+										  <li class="item ap1share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Cut</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap1share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Cut: Di chuyển shortcut, file, thư mục đến thư mực mong muốn</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										   <li class="item ap1share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Copy</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap1share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Copy: sao chép shortcut, file, thư mục đến thư mực mong muốn</span>
+											  </li>
+											</ul>
+										  </li>
+										  <hr>
+										  <li class="item ap1share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Create shortcut</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap1share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Create shortcut: Tạo một link mở nhanh ứng dụng trên màn hình máy tính</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										   <li class="item ap1share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Delete</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap1share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Delete: Xóa shortcut, file, thư mục</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										  <li class="item ap1share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Rename</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap1share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Rename: Đổi tên shortcut, file, thư mục</span>
+											  </li>
+											</ul>
+										  </li>
+										  <hr>
+										  <li class="item ap1share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Properties</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap1share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Properties: Xem thông tin của Shortcut</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+									  </div>
+									</div>	
+					</div>
+
+					<div id="app4" class='apps'><img src='image/folder.png'>
+					  <p>New Folder</p>
+									<div class="ap4wrapper">
+									  <div class="content">
+										  <li class="item ap4share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Open</span>
+											</div class="settings">
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap4share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Open: Mở ứng dụng thông qua shortcut</span>
+											  </li>
+											</ul>
+										  </li>
+										  <hr>
+										  <li class="item ap4share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Open file location</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap4share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Open file location: Mở vị trí được cài đặt của ứng dụng</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										  <li class="item ap4share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Run as administrator</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap4share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Run as administrator: Mở ứng dụng dưới quyền quản trị trên Windows </span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										  <li class="item ap4share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Pin to Start</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap4share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Pin to Start: Ghim shortcut của ứng dụng vào menu Start</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										   <li class="item ap4share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Pin to taskbar</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap4share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Pin to taskbar: Ghim shortcut của ứng dụng vào thanh Taskbar</span>
+											  </li>
+											</ul>
+										  </li>
+										<hr>
+										<li class="item ap4share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Send to</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap4share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Send to: sao chép shortcut, file, thư mục đến các thư mục thông dụng một cách nhanh chóng</span>
+											  </li>
+											</ul>
+										  </li>
+										  <hr>
+										  <li class="item ap4share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Cut</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap4share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Cut: Di chuyển shortcut, file, thư mục đến thư mực mong muốn</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										   <li class="item ap4share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Copy</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap4share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Copy: sao chép shortcut, file, thư mục đến thư mực mong muốn</span>
+											  </li>
+											</ul>
+										  </li>
+										  <hr>
+										  <li class="item ap4share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Create shortcut</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap4share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Create shortcut: Tạo một link mở nhanh ứng dụng trên màn hình máy tính</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										   <li class="item ap4share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Delete</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap4share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Delete: Xóa shortcut, file, thư mục</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										  <li class="item ap4share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Rename</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap4share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Rename: Đổi tên shortcut, file, thư mục</span>
+											  </li>
+											</ul>
+										  </li>
+											<hr>
+										  <li class="item ap4share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Properties</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap4share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Properties: Xem thông tin của Shortcut</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+									  </div>
+									</div>
+					</div>
+
+					<div id="app5" class='apps'><img src='image/recycle.png'>
+					  <p>Recycle Bin</p>
+									<div class="ap5wrapper">
+									  <div class="content">
+										  <li class="item ap5share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Open</span>
+											</div class="settings">
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap5share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Open: Mở ứng dụng thông qua shortcut</span>
+											  </li>
+											</ul>
+										  </li>
+										  <hr>
+										  <li class="item ap5share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Open file location</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap5share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Open file location: Mở vị trí được cài đặt của ứng dụng</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										  <li class="item ap5share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Run as administrator</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap5share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Run as administrator: Mở ứng dụng dưới quyền quản trị trên Windows </span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										  <li class="item ap5share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Pin to Start</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap5share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Pin to Start: Ghim shortcut của ứng dụng vào menu Start</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										   <li class="item ap5share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Pin to taskbar</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap5share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Pin to taskbar: Ghim shortcut của ứng dụng vào thanh Taskbar</span>
+											  </li>
+											</ul>
+										  </li>
+										<hr>
+										<li class="item ap5share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Send to</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap5share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Send to: sao chép shortcut, file, thư mục đến các thư mục thông dụng một cách nhanh chóng</span>
+											  </li>
+											</ul>
+										  </li>
+										  <hr>
+										  <li class="item ap5share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Cut</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap5share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Cut: Di chuyển shortcut, file, thư mục đến thư mực mong muốn</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										   <li class="item ap5share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Copy</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap5share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Copy: sao chép shortcut, file, thư mục đến thư mực mong muốn</span>
+											  </li>
+											</ul>
+										  </li>
+										  <hr>
+										  <li class="item ap5share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Create shortcut</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap5share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Create shortcut: Tạo một link mở nhanh ứng dụng trên màn hình máy tính</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										   <li class="item ap5share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Delete</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap5share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Delete: Xóa shortcut, file, thư mục</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										  <li class="item ap5share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Rename</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap5share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Rename: Đổi tên shortcut, file, thư mục</span>
+											  </li>
+											</ul>
+										  </li>
+										  <hr>
+										  <li class="item ap5share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Properties</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap5share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Properties: Xem thông tin của Shortcut</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+									  </div>
+									</div>
+					</div>
+					
+					<div id="app2" class='apps'><img src='image/chrome.png'>
+					  <p>Google Chrome</p>
+									<div class="ap2wrapper">
+									  <div class="content">
+										  <li class="item ap2share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Open</span>
+											</div class="settings">
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap2share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Open: Mở ứng dụng thông qua shortcut</span>
+											  </li>
+											</ul>
+										  </li>
+										  <hr>
+										  <li class="item ap2share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Open file location</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap2share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Open file location: Mở vị trí được cài đặt của ứng dụng</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										  <li class="item ap2share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Run as administrator</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap2share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Run as administrator: Mở ứng dụng dưới quyền quản trị trên Windows </span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										  <li class="item ap2share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Pin to Start</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap2share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Pin to Start: Ghim shortcut của ứng dụng vào menu Start</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										   <li class="item ap2share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Pin to taskbar</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap2share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Pin to taskbar: Ghim shortcut của ứng dụng vào thanh Taskbar</span>
+											  </li>
+											</ul>
+										  </li>
+										<hr>
+										<li class="item ap2share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Send to</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap2share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Send to: sao chép shortcut, file, thư mục đến các thư mục thông dụng một cách nhanh chóng</span>
+											  </li>
+											</ul>
+										  </li>
+										  <hr>
+										  <li class="item ap2share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Cut</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap2share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Cut: Di chuyển shortcut, file, thư mục đến thư mực mong muốn</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										   <li class="item ap2share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Copy</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap2share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Copy: sao chép shortcut, file, thư mục đến thư mực mong muốn</span>
+											  </li>
+											</ul>
+										  </li>
+										  <hr>
+										  <li class="item ap2share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Create shortcut</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap2share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Create shortcut: Tạo một link mở nhanh ứng dụng trên màn hình máy tính</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										   <li class="item ap2share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Delete</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap2share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Delete: Xóa shortcut, file, thư mục</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										  <li class="item ap2share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Rename</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap2share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Rename: Đổi tên shortcut, file, thư mục</span>
+											  </li>
+											</ul>
+										  </li>
+										  <hr>
+										  <li class="item ap2share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Properties</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap2share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Properties: Xem thông tin của Shortcut</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+									  </div>
+									</div>
+					</div>
+					
+					<div id="app3" class='apps'><img src='image/UniKey.png'>
+					  <p>UniKey</p>
+									<div class="ap3wrapper">
+									  <div class="content">
+										  <li class="item ap3share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Open</span>
+											</div class="settings">
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap3share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Open: Mở ứng dụng thông qua shortcut</span>
+											  </li>
+											</ul>
+										  </li>
+										  <hr>
+										  <li class="item ap3share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Open file location</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap3share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Open file location: Mở vị trí được cài đặt của ứng dụng</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										  <li class="item ap3share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Run as administrator</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap3share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Run as administrator: Mở ứng dụng dưới quyền quản trị trên Windows </span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										  <li class="item ap3share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Pin to Start</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap3share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Pin to Start: Ghim shortcut của ứng dụng vào menu Start</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										   <li class="item ap3share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Pin to taskbar</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap3share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Pin to taskbar: Ghim shortcut của ứng dụng vào thanh Taskbar</span>
+											  </li>
+											</ul>
+										  </li>
+										<hr>
+										<li class="item ap3share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Send to</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap3share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Send to: sao chép shortcut, file, thư mục đến các thư mục thông dụng một cách nhanh chóng</span>
+											  </li>
+											</ul>
+										  </li>
+										  <hr>
+										  <li class="item ap3share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Cut</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap3share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Cut: Di chuyển shortcut, file, thư mục đến thư mực mong muốn</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										   <li class="item ap3share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Copy</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap3share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Copy: sao chép shortcut, file, thư mục đến thư mực mong muốn</span>
+											  </li>
+											</ul>
+										  </li>
+										  <hr>
+										  <li class="item ap3share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Create shortcut</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap3share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Create shortcut: Tạo một link mở nhanh ứng dụng trên màn hình máy tính</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										   <li class="item ap3share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Delete</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap3share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Delete: Xóa shortcut, file, thư mục</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+										  <li class="item ap3share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Rename</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap3share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Rename: Đổi tên shortcut, file, thư mục</span>
+											  </li>
+											</ul>
+										  </li>
+										  <hr>
+										  <li class="item ap3share">
+											<div class="settings">
+											  <i class="uil uil-share"></i>
+											  <span>Properties</span>
+											</div>
+											<i class="uil uil-angle-right"></i>
+											<ul class="ap3share-menu">
+											  <li class="items">
+												<i class="uil uil-twitter-alt"></i>
+												<span>Properties: Xem thông tin của Shortcut</span>
+											  </li>
+											</ul>
+										  </li>
+										  
+									  </div>
+									</div>
+					</div>
+				</aside>			
+			</div>
+			
+			<!-- mô phỏng -->	
+			<div id="phai">
+				<div class="MoPhong">
+					<p class="thaotac">Mô phỏng thao tác</p>
+					<div id="doubleclick"></div>
+					<div class="MoPhongChuot" id="demochuot"></div> 
+				</div>
+				<div class="mycursor" id="demo">
+				<p class="dichuyen">MÔ PHỎNG <BR> DI CHUYỂN</p>
+				</div>
+			</div>
+		
+		</div>	
+	</div>
+
+</body>
+	<script  src="js/manhinh.js"></script>
+	<script  src="js/Chuot.js"></script>
+</html>

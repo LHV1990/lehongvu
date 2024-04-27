@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Mô Phỏng Bàn Phím</title>
+  <link rel="stylesheet" href="css/BanPhim.css">
+  <link rel="stylesheet" href="css/ThongBao.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/avim.css">
+  <link rel="shortcut icon" type="image/png" href="image/Iconpc.png"/>
+</head>
+
+<body onload="setFocus()" id="myDiv">	
+
+	<!-- Menu  -->	
+	<div class = "MenuClick">
+		<div class = "BoxMenu">
+			<a href="BanPhim.html" class="textlink">BÀN PHÍM</a>			
+			<a href="Chuot.html" class="textlink">CHUỘT</a>			
+			<a href="GioiThieu.html" class="textlink">GIỚI THIỆU</a>
+		</div>
+	</div>  
+	
+	<!-- Thông Báo  -->	
+	<div class="popup-card">
+	  <button id="close-btn">
+		<span class="material-symbols-rounded close-icon"> X </span>
+	  </button>
+
+	  <div class="content">
+		<h3>LƯU Ý</h3>
+		<p>
+			Vui lòng tắt phần mềm hỗ trợ gõ tiếng việt như Unikey - Vietkey - EVKey... 
+		  
+		  
+		</p>
+	  </div>
+	</div>
+	
+	<!-- Text và Bàn Phím -->
+    <div class="container">
+	
+	<!-- Bàn Phím -->
+        <div class="keyboard_wrapp">
+            <div class="keyboard_lights"></div>
+            <div class="keyboard_keys">
+                <div class="row">
+                    <div class="keys">`</div>
+                    <div class="keys">1</div>
+                    <div class="keys">2</div>
+                    <div class="keys">3</div>
+                    <div class="keys">4</div>
+                    <div class="keys">5</div>
+                    <div class="keys">6</div>
+                    <div class="keys">7</div>
+                    <div class="keys">8</div>
+                    <div class="keys">9</div>
+                    <div class="keys">0</div>
+                    <div class="keys">-</div>
+                    <div class="keys">=</div>
+                    <div class="keys backspace_key">Backspace</div>
+                </div>
+                <div class="row">
+                    <div class="keys tab_key">Tab</div>
+                    <div class="keys">Q</div>
+                    <div class="keys">W</div>
+                    <div class="keys">E</div>
+                    <div class="keys">R</div>
+                    <div class="keys">T</div>
+                    <div class="keys">Y</div>
+                    <div class="keys">U</div>
+                    <div class="keys">I</div>
+                    <div class="keys">O</div>
+                    <div class="keys">P</div>
+                    <div class="keys">[</div>
+                    <div class="keys">]</div>
+                    <div class="keys slash_key">\</div>
+                </div>
+                <div class="row">
+                    <div class="keys caps_lock_key">Caps Lock</div>
+                    <div class="keys">A</div>
+                    <div class="keys">S</div>
+                    <div class="keys">D</div>
+                    <div class="keys">F</div>
+                    <div class="keys">G</div>
+                    <div class="keys">H</div>
+                    <div class="keys">J</div>
+                    <div class="keys">K</div>
+                    <div class="keys">L</div>
+                    <div class="keys">;</div>
+                    <div class="keys">'</div>
+                    <div class="keys enter_key">Enter</div>
+                </div>
+                <div class="row">
+                    <div class="keys shift_key shift_left">Shift</div>
+                    <div class="keys">Z</div>
+                    <div class="keys">X</div>
+                    <div class="keys">C</div>
+                    <div class="keys">V</div>
+                    <div class="keys">B</div>
+                    <div class="keys">N</div>
+                    <div class="keys">M</div>
+                    <div class="keys">,</div>
+                    <div class="keys">.</div>
+                    <div class="keys">/</div>
+                    <div class="keys">?</div>
+                    <div class="keys shift_key shift_right">Shift</div>
+                </div>
+                <div class="row">
+                    <div class="keys ctrl_key_left">Ctrl</div>
+					<div class="keys fn_key">Fn</div>
+                    <div class="keys win_key">Win</div>
+                    <div class="keys alt_key_left">Alt</div>
+                    <div class="keys space_key"></div>
+                    <div class="keys alt_key_right">Alt</div>
+                    <div class="keys ctrl_key_right">Ctrl</div>
+                </div>
+            </div>
+        </div>
+		
+	<!-- Text-->
+	<textarea class="text" id="fname" ></textarea>
+    </div>
+	
+</body>
+
+  <script  src="js/avim.js"></script>
+  <script  src="js/BanPhim.js"></script>
+  <script  src="js/ThongBao.js"></script>
+</body>
+</html>
